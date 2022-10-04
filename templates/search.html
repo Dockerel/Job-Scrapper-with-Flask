@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/143eafbf8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Search | {{keyword}}</title>
+  </head>
+  <body>
+    <div class="search">
+      <div class="search-bgimage"></div>
+      <div class="search-main">
+        <div class="search-menu">
+          <div>
+            <h1>Search Results for "{{keyword}}"</h1>
+            <span>{{job_len}} jobs waiting for you...</span>
+          </div>
+          <div>
+            <a target="_blank" href="/export?keyword={{keyword}}">
+              <i class="fa-regular fa-floppy-disk"></i>
+            </a>
+            <a href="/">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </div>
+        </div>
+        <div class="search-list">
+          <div class="search-menu-listname">
+            <span>Company</span>
+            <span>Position</span>
+            <span>Location</span>
+            <span>Link</span>
+          </div>
+          {% for job in jobs %}
+          <div class="search-object">
+            <span>{{job.company}}</span>
+            <span>{{job.position}}</span>
+            <span>{{job.location}}</span>
+            <a href="{{job.link}}" target="_blank">Apply Now &rarr;</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

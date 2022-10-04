@@ -1,0 +1,132 @@
+.search {
+  position: relative;
+}
+
+.search-bgimage {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-image: url("../image/programming.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.search-main {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-menu > div {
+  margin-top: 120px;
+}
+
+.search-menu > div:first-child {
+  display: flex;
+  flex-direction: column;
+  font-family: "Caveat", cursive;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px gray;
+  padding-right: 70px;
+}
+
+.search-menu > div:first-child > span {
+  font-size: 35px;
+  display: block;
+  margin-top: 10px;
+}
+
+.search-menu > div:last-child > a {
+  color: white;
+  font-size: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-menu > div:last-child > a:first-child {
+  margin-right: 30px;
+}
+
+.search-menu > div:last-child > a:hover {
+  color: #4484f5;
+}
+
+.search-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 150px;
+}
+
+.search-menu-listname {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid white;
+}
+
+.search-object {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgb(161, 161, 161);
+  font-weight: 600;
+}
+
+.search-menu-listname > span {
+  color: white;
+}
+
+.search-object > span,
+.search-object > a {
+  color: white;
+}
+
+.search-menu-listname,
+.search-object {
+  width: 1200px;
+}
+
+.search-menu-listname > span:first-child,
+.search-object > span:first-child {
+  display: inline-block;
+  width: 10%;
+  margin-right: 30px;
+}
+
+.search-menu-listname > span:nth-child(2),
+.search-object > span:nth-child(2) {
+  display: inline-block;
+  width: 35%;
+  margin-right: 30px;
+}
+
+.search-menu-listname > span:nth-child(3),
+.search-object > span:nth-child(3) {
+  display: inline-block;
+  width: 30%;
+}
+
+.search-menu-listname > span:last-child,
+.search-object > a {
+  display: inline-block;
+  width: 10%;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-object > a:hover {
+  color: #4484f5;
+}

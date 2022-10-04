@@ -1,0 +1,99 @@
+.home {
+  position: relative;
+}
+
+.home-bgimage {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../image/programming.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  z-index: 1;
+}
+
+.home-main {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-main > h1 {
+  font-family: "Caveat", cursive;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 80px;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.home-main > h4 {
+  font-family: "Caveat", cursive;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 30px;
+  display: block;
+  margin-top: 30px;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.home-search-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-search-form > input {
+  width: 400px;
+  height: 60px;
+  border: none;
+  padding: 7px 20px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  font-family: "Caveat", cursive;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px gray;
+  border: 3px solid rgb(116, 116, 116);
+  transition: all 0.2s ease-in-out;
+}
+
+.home-search-form > input::placeholder {
+  color: rgb(233, 233, 233);
+}
+
+.home-search-form > input:focus {
+  outline: none;
+  border: 3px solid aliceblue;
+}
+
+.home-search-form > button {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  border: 3px solid rgb(116, 116, 116);
+  font-size: 25px;
+  background-color: rgb(202, 212, 220);
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-search-form > button:hover {
+  background-color: grey;
+  color: black;
+  border: 3px solid black;
+}
