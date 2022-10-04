@@ -14,14 +14,14 @@
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
-
+/* 
 .search-main {
   position: absolute;
   z-index: 99;
   display: flex;
   justify-content: center;
 }
-
+*/
 .search-menu {
   display: flex;
   align-items: center;
