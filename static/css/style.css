@@ -1,5 +1,3 @@
-/* components */
-
 /* config */
 @import "./config/reset.css";
 
@@ -8,7 +6,6 @@
 @import "./screens/search.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Pacifico&display=swap");
-@import "./_variable.css";
 
 a {
   color: inherit;
